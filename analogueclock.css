@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: powderblue;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  height: 400px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 4px solid black;
+  position: relative;
+}
+
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 4px;
+  background: black;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
+.hour {
+  width: 25%;
+  background: black;
+  height: 6px;
+}
+
+.min {
+  width: 35%;
+  background: rgb(0, 0, 58);
+}
+
+.sec {
+  width: 40%;
+  background: black;
+  height: 2px;
+}
+
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+
+.tick {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: black;
+  top: 0;
+  left: 50%;
+  transform-origin: center 190px; 
+}
